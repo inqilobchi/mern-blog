@@ -7,7 +7,7 @@ import postRoutes from './routes/post.route.js';
 import commentRoutes from './routes/comment.route.js';
 import cookieParser from 'cookie-parser';
 import path from 'path';
-
+import cors from 'cors';
 dotenv.config();
 
 mongoose
@@ -22,6 +22,12 @@ mongoose
 const __dirname = path.resolve();
 
 const app = express();
+
+app.use(cors({
+  origin: '*', // ✅ Hamma saytlar uchun ruxsat
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // ✅ kerakli HTTP metodlar
+  credentials: true // ✅ cookie yuborishga ruxsat (xohlasangiz false qiling)
+}));
 
 app.use(express.json());
 app.use(cookieParser());
