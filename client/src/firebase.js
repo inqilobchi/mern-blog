@@ -9,7 +9,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyCZ7evIT9BYXC-7F4dm9On5N3ktvwF6tks",
   authDomain: "bookuz-acd51.firebaseapp.com",
   projectId: "bookuz-acd51",
-  storageBucket: "bookuz-acd51.firebasestorage.app",
+  storageBucket: "bookuz-acd51.appspot.com",
   messagingSenderId: "768110026781",
   appId: "1:768110026781:web:d28d7f4738f1ab23bde6f4",
   measurementId: "G-7WELQ58957"
