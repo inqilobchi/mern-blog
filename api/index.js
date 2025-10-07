@@ -25,7 +25,7 @@ const app = express();
 
 app.use(cors({
   origin: '*', // ✅ Hamma saytlar uchun ruxsat
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // ✅ kerakli HTTP metodlar
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], // ✅ kerakli HTTP metodlar
   maxAgeSeconds: 3600,
   responseHeader: ["Content-Type", "Authorization"],
   credentials: true // ✅ cookie yuborishga ruxsat (xohlasangiz false qiling)
